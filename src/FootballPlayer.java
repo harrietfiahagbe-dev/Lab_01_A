@@ -84,13 +84,17 @@ System.out.println("Jersey number - " + jersey_number);
 
         }
 //TASK 5
+        String player_type;
         if (age<20){
-            System.out.println("Rising Star");
+            player_type = "Rising Star";
+            //System.out.println("Rising Star");
         }
         else if (age>= 20 && age<30) {
-            System.out.println("Prime Player");
+            player_type = "Prime Player";
+            //System.out.println("Prime Player");
         }else{
-            System.out.println("Vetran");
+            player_type = "Vetran";
+            //System.out.println("Vetran");
         }
 
  //TASK 6
@@ -131,7 +135,26 @@ System.out.println("Enter the jersey number of the player: ");
         System.out.println("Your player is a " + player_position);
 
 //TASK 7
-        //I AM DONE WITH YOU AS WELL , DID IT IN TASK 6
+        //I AM DONE WITH YOU AS WELL, DID IT IN TASK 6
+
+
+//TASK 8
+       String linup_final;
+if (player_type.equals("Prime Player")){
+    if (current_weight < 80) {
+        linup_final = "Lineup";
+    }else{
+        linup_final = "Bench";
+    }
+
+//TASK 9
+
+    }
+}
+
+
+
+
 
     }
 }
