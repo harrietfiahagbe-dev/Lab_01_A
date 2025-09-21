@@ -3,11 +3,12 @@
 //Description: Creat a short Java Program that helps coach to make decisions about a player based on certain factors and statistics
 
 //TASK 1
+//importing Scanner package to allow input
 import java.util.Scanner;
 public class FootballPlayer {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-
+//declaring variables with their approiate data type and accpeting data from user
         System.out.print("Enter your name: ");
         String name = input.nextLine();
 
@@ -35,8 +36,10 @@ public class FootballPlayer {
 
 
 //TASK 2
+        //declaring constant variabels
         float POUND = 0.45359237f;
         int METER = 100;
+        //Converting from cm to meter and kg to pounds
         double new_weight = POUND * weight;
         double new_height = height * METER;
         int current_height = (int) new_height;
@@ -57,9 +60,42 @@ jersey_number--;
 System.out.println("Age - " + age);
 System.out.println("Jersey number - " + jersey_number);
 
+//TASK 4
+//EXPERIMENT 1
+        boolean Eligible = (age >= 18) && (age < 35) && (current_weight <90);
+        if (Eligible){
+            System.out.println("Eligible");
+        }
+        else{
+            System.out.println("Not Eligible");
 
+        }
 
+        //EXPERIMENT 2
+        boolean problem = (age<18) || (current_weight >= 90);
+        if (problem) {
+            System.out.println("Player has a problem(Either too young or too heavy)");
+        }
 
+        //EXPERIMENT 3
+        boolean notEligible = (!Eligible);
+        if (notEligible){
+            System.out.println("Not Eligible");
+
+        }
+//TASK 5
+        if (age<20){
+            System.out.println("Rising Star");
+        }
+        else if (age>= 20 && age<30) {
+            System.out.println("Prime Player");
+        }else{
+            System.out.println("Vetran");
+        }
+
+ //TASK 6
+
+        }
     }
 }
 
