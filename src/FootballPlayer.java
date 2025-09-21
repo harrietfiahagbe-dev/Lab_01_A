@@ -35,10 +35,10 @@ public class FootballPlayer {
 
 
 //TASK 2
-        float pound = 0.45359237f;
-        int meter = 100;
-        double new_weight = pound * weight;
-        double new_height = height * meter;
+        float POUND = 0.45359237f;
+        int METER = 100;
+        double new_weight = POUND * weight;
+        double new_height = height * METER;
         int current_height = (int) new_height;
         int current_weight = (int) new_weight;
 
@@ -49,6 +49,13 @@ public class FootballPlayer {
         System.out.println("Jersey Number -  " + jersey_number);
 
 
+        //TASK 3
+
+System.out.println(age);
+age++;
+jersey_number--;
+System.out.println("Age - " + age);
+System.out.println("Jersey number - " + jersey_number);
 
 
 
