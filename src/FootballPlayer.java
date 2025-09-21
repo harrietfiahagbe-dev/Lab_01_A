@@ -94,8 +94,45 @@ System.out.println("Jersey number - " + jersey_number);
         }
 
  //TASK 6
+System.out.println("Enter the jersey number of the player: ");
+
+        String player_position= "";
+        switch(jersey_number){
+
+            case 1: player_position = "Goal kepper";
+            break;
+
+            case 2:
+            case 5:player_position = "Defender";
+            break;
+
+            case 6:
+            case 8:player_position = "midfielder";
+                break;
+
+            case 7: player_position= "Winger";
+            break;
+
+            case 9: player_position = "Striker";
+            break;
+
+            case 10:player_position = "Play Maker";
+            break;
+
+
+
+            default:
+                System.out.println("player position not known");
+
+
+
 
         }
+        System.out.println("Your player is a " + player_position);
+
+//TASK 7
+        //I AM DONE WITH YOU AS WELL , DID IT IN TASK 6
+
     }
 }
 
