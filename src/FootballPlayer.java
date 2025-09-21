@@ -62,11 +62,14 @@ System.out.println("Jersey number - " + jersey_number);
 
 //TASK 4
 //EXPERIMENT 1
+        String Eligibility;
         boolean Eligible = (age >= 18) && (age < 35) && (current_weight <90);
         if (Eligible){
-            System.out.println("Eligible");
+            Eligibility = "Eligible";
+            System.out.println(Eligibility);
         }
         else{
+            Eligibility = " Not Eligible";
             System.out.println("Not Eligible");
 
         }
@@ -148,6 +151,9 @@ if (player_type.equals("Prime Player")){
     }
 
 //TASK 9
+String final_decision;
+    final_decision = (Eligibility.equals("Eligible")) ? "Play": "Rest";
+    System.out.println("The player is supposed to " + final_decision);
 
     }
 }
@@ -157,7 +163,7 @@ if (player_type.equals("Prime Player")){
 
 
     }
-}
+
 
 
 
