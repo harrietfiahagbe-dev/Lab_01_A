@@ -7,6 +7,7 @@
 import java.util.Scanner;
 public class FootballPlayer {
     public static void main(String[] args) {
+        //Creating Scanner object for user input
         Scanner input = new Scanner(System.in);
 //declaring variables with their approiate data type and accpeting data from user
         System.out.print("Enter your name: ");
